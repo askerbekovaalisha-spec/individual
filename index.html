@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 5, Part 2 (Tasks 6–10)</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <h1>Assignment #5, Part 2</h1>
+    <p>Individual work: DOM &amp; Events, Tasks 6-10</p>
+    <p class="student">Student: Askerbekova Alisha, group MT2506</p>
+  </header>
+ 
+  <main>
+ 
+    <section id="task6" class="task">
+      <h2>Task 6. A counter with click events</h2>
+      <p class="counter-value" id="counterValue">0</p>
+      <div class="buttons">
+        <button type="button" id="increaseBtn">Increase</button>
+        <button type="button" id="decreaseBtn">Decrease</button>
+        <button type="button" id="resetBtn">Reset</button>
+      </div>
+    </section>
+ 
+    <section id="task7" class="task">
+      <h2>Task 7. Live text preview</h2>
+      <label for="previewInput">Type your text:</label>
+      <input type="text" id="previewInput" placeholder="Start typing...">
+      <button type="button" id="clearBtn">Clear</button>
+ 
+      <p class="label">Preview:</p>
+      <p id="previewText" class="preview empty">Your text will appear here</p>
+      <p>Characters: <span id="charCount">0</span></p>
+    </section>
+ 
+    <section id="task8" class="task">
+      <h2>Task 8. Change an image with a select control</h2>
+      <label for="imageSelect">Choose an event type:</label>
+      <select id="imageSelect">
+        <option value="concert">Concert</option>
+        <option value="festival">Festival</option>
+        <option value="club">Club</option>
+      </select>
+ 
+      <figure>
+        <img id="mainImage" src="images/concert.jpg" alt="Musician with a guitar on a stage under spotlights" width="400">
+        <figcaption id="imageCaption">Concert: a live performance on stage</figcaption>
+      </figure>
+    </section>
+
+    <section id="task9" class="task">
+      <h2>Task 9. Keyboard events</h2>
+      <form id="keyForm">
+        <label for="keyInput">Type something (Enter — show, Escape — clear):</label>
+        <input type="text" id="keyInput" placeholder="Press keys here...">
+      </form>
+      <p id="keyStatus">Last key pressed: none</p>
+      <p>Result: <span id="keyResult"></span></p>
+    </section>
+ 
+    <section id="task10" class="task">
+      <h2>Task 10. Mouse and focus events</h2>
+      <div class="card-row">
+        <div id="focusCard" class="card" tabindex="0">Hover or focus this card</div>
+        <p id="cardInfo">Move the mouse over the card or press Tab to focus it.</p>
+      </div>
+      <ul class="notes">
+        <li><b>mouseenter</b> — adds the highlight and changes the instruction (mouse).</li>
+        <li><b>mouseleave</b> — removes the highlight and restores the text (mouse).</li>
+        <li><b>focus</b> — the same as mouseenter, but for the keyboard (Tab).</li>
+        <li><b>blur</b> — the same as mouseleave, when the card loses focus.</li>
+      </ul>
+    </section>
+ 
+  </main>
+</body>
+</html>
